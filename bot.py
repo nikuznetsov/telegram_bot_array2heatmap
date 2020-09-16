@@ -4,7 +4,6 @@ import os
 import random
 import telebot
 from telebot import types
-bot = telebot.TeleBot('1220549772:AAGQjbRmfg-EeAEmKqSivHqCfWwGlgC_zCY')
 
 @bot.message_handler(content_types=['document'])
 def handle_file(message): 
