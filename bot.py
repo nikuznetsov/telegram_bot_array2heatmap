@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt 
 import numpy as np
-import redis
+# import redis
 import os
 import telebot
 import random
@@ -16,7 +16,7 @@ some_api_token = os.environ['SOME_API_TOKEN']
 #             ...
 
 # If you use redis, install this add-on https://elements.heroku.com/addons/heroku-redis
-r = redis.from_url(os.environ.get("REDIS_URL"))
+# r = redis.from_url(os.environ.get("REDIS_URL"))
 
 bot = telebot.TeleBot('TELEGRAM_TOKEN')
 
