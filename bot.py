@@ -26,7 +26,7 @@ def handle_file(message):
     chat_id = message.chat.id
     file_info = bot.get_file(message.document.file_id)
     downloaded_file = bot.download_file(file_info.file_path)
-    src = '/home/nikuznetsov/BOT/' + message.document.file_name
+    src = '/app/' + message.document.file_name
     length = len(file_info.file_path)
     if file_info.file_path[length-4:length+1] != ".dat":
         bot.send_message(message.from_user.id, "Better check /help.")
@@ -70,14 +70,14 @@ def handle_file(message):
         h, w = points.shape 
         plt.xlim(0,h) 
         plt.ylim(w,0) 
-        plt.savefig('/home/nikuznetsov/BOT/{}.png'.format(message.document.file_name))
+        plt.savefig('/app/{}.png'.format(message.document.file_name))
         plt.close()
         bot.send_message(message.from_user.id, "Max value for {} = {:.2e}".format(message.document.file_name, np.amax(points)))
         uis_png = open('/home/nikuznetsov/BOT/{}.png'.format(message.document.file_name), 'rb')     
         bot.send_photo(message.from_user.id, uis_png)
         uis_png.close() 
-        os.remove('/home/nikuznetsov/BOT/{}.png'.format(message.document.file_name))
-        os.remove('/home/nikuznetsov/BOT/' + message.document.file_name)   
+        os.remove('/app/{}.png'.format(message.document.file_name))
+        os.remove('/app/' + message.document.file_name)   
         bot.send_message(message.from_user.id, text='You can send another file... Or bye!')
 
 @bot.message_handler(content_types=['text'])
