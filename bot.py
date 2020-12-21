@@ -18,7 +18,7 @@ some_api_token = os.environ['SOME_API_TOKEN']
 # If you use redis, install this add-on https://elements.heroku.com/addons/heroku-redis
 r = redis.from_url(os.environ.get("REDIS_URL"))
 
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot('TELEGRAM_TOKEN')
 
 #       Your bot code below
 @bot.message_handler(content_types=['document'])
