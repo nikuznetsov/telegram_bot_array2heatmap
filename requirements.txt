@@ -1,6 +1,7 @@
 redis
 requests==2.16.5
-git+https://github.com/Kylmakalle/pyTelegramBotAPI.git@feature-BotAPIV3
+pyTelegramBotAPI
+# git+https://github.com/Kylmakalle/pyTelegramBotAPI.git@feature-BotAPIV3
 https://site.org/files/package.zip
 matplotlib
 numpy
