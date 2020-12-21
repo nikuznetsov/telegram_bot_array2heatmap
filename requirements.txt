@@ -10,7 +10,7 @@
 # Or you have .zip library
 # https://site.org/files/package.zip
 
-python-3.6.12
+# python-3.6.12
 matplotlib
 numpy
 pyTelegramBotAPI
