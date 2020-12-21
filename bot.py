@@ -73,7 +73,7 @@ def handle_file(message):
         plt.savefig('/app/{}.png'.format(message.document.file_name))
         plt.close()
         bot.send_message(message.from_user.id, "Max value for {} = {:.2e}".format(message.document.file_name, np.amax(points)))
-        uis_png = open('/home/nikuznetsov/BOT/{}.png'.format(message.document.file_name), 'rb')     
+        uis_png = open('/app/{}.png'.format(message.document.file_name), 'rb')     
         bot.send_photo(message.from_user.id, uis_png)
         uis_png.close() 
         os.remove('/app/{}.png'.format(message.document.file_name))
