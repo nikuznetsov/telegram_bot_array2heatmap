@@ -9,3 +9,7 @@
 
 # Or you have .zip library
 # https://site.org/files/package.zip
+
+pip install matplotlib
+pip install numpy
+pip install pyTelegramBotAPI
