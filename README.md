@@ -5,3 +5,5 @@ This program is used to solve a scientific problem. There is a program for calcu
 This bot differs from the program in the way that there is no function for cropping part of image.
 
 Bot is hosted by ***Heroku***.
+
+You can find it on Telegram: @array2heatmap_bot. But specific format of file is needed.
