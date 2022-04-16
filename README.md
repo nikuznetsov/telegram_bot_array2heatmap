@@ -4,4 +4,4 @@ This program is used to solve a scientific problem. There is a program for calcu
 
 Bot is hosted by ***Heroku***.
 
-You can find it on Telegram: @array2heatmap_bot. But specific format of file is needed.
+You can find it on Telegram: @array2heatmap_bot (currently out of order). But specific format of file is needed.
